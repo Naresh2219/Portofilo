@@ -1,39 +1,52 @@
-/* Custom CSS for Naresh Challa's Portfolio */
-
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #00c8ff;
 }
 
 header {
   background-color: #333;
-  color: #fff;
+  color: #ededed;
   text-align: center;
   padding: 20px;
 }
 
 nav {
-  background-color: #444;
-  padding: 10px;
-}
-
-nav ul {
-  list-style: none;
   margin: 0;
   padding: 0;
+  background-color: ffff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
 }
+nav ul{
+display: flex;
+list-style: none;
+justify-content: space-between;
+padding: 1em;
 
-nav ul li {
-  display: inline;
-  margin-right: 20px;
 }
-
-nav a {
-  text-decoration: none;
-  color: #fff;
+nav li{
+  margin: 0;
+}
+nav a{
+  text-decoration: dashed;
   font-weight: bold;
+  padding: 10px;
+  margin: 0 10px;
+  color: aqua;
+  background-color: #333;
+  -o-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  font-size: small;
 }
+
+
 
 main {
   padding: 20px;
@@ -41,8 +54,13 @@ main {
 
 /* About Me Section */
 #about img {
-  max-width: 100%;
+  max-width: 10%;
   height: auto;
+  -o-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
 }
 
 .achievements,
@@ -67,6 +85,7 @@ main {
 
 #projects a {
   color: #007BFF;
+  text-decoration: none;
 }
 
 #projects a:hover {
@@ -89,11 +108,11 @@ main {
 
 /* Contact Section */
 #contact-form {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 #contact-form div {
-  margin-bottom: 15px;
+  margin-bottom: 11px;
 }
 
 #contact-form label {
@@ -101,24 +120,32 @@ main {
   margin-bottom: 5px;
   font-weight: bold;
 }
-
+.fa-submit{
+  background:#4CAF50
+}
 #contact-form input,
 #contact-form button {
   padding: 10px;
-  width: 100%;
+  width: 50%;
   box-sizing: border-box;
   margin-bottom: 10px;
 }
 
 #contact-form button {
-  background-color: #007BFF;
-  color: #fff;
-  border: none;
+  background-color: #00c8ff;
+  color: #7b3a7d;
+  border: #007BFF;
   cursor: pointer;
+  width: 80px;
+  -o-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
 }
 
 #contact-form button:hover {
-  background-color: #0056b3;
+  background-color: #00b362;
 }
 
 /* Footer Section */
@@ -130,15 +157,10 @@ footer {
 }
 
 footer a {
-  color: #fff;
+  color: #ffffff;
   margin: 0 10px;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  header {
-    padding: 10px;
-  }
 
   nav ul li {
     display: block;
@@ -152,4 +174,30 @@ footer a {
   #about img {
     width: 100%;
   }
+  .social-icons{
+ size: 10px;
+ padding-left: 20px;
+  }
+  .fa-google{
+    color: red;
+    background-color: rgb(255, 182, 127);
+    size: 10px;
+  }
+  .fa-google:hover{
+    color: rgb(255, 0, 0);
+  }
+.fa-github{
+  background-color: black ;
+}
+.fa-github:hover{
+  background-color: #007BFF;
+}
+.fa-twitter{
+  color: #007BFF;
+}
+.linkedin{
+  color: #007BFF;
+}
+.linkedin:hover{
+  background-color: aqua;
 }
