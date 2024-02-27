@@ -17,6 +17,12 @@
         "button-name": "off",
         "link-name": "off"
       }
+    ],
+    "axe/structure": [
+      "default",
+      {
+        "list": "off"
+      }
     ]
   }
 }

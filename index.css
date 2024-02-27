@@ -1,16 +1,45 @@
+
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #00c8ff;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 header {
-  background-color: #333;
-  color: #ededed;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
+  background-color: #333;
+  color: #fff;
 }
+
+.profile-container {
+  display: flex;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+
+.profile-picture:hover {
+  transform: scale(1.1);
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
 
 nav {
   margin: 0;
@@ -21,6 +50,7 @@ nav {
   right: 0;
   padding: 10px;
 }
+
 nav ul{
 display: flex;
 list-style: none;
@@ -49,19 +79,17 @@ nav a{
 
 
 main {
+  max-width: 800px;
+  margin: 0 auto;
   padding: 20px;
+
+}
+section{
+  margin-bottom: 30px;
 }
 
 /* About Me Section */
-#about img {
-  max-width: 10%;
-  height: auto;
-  -o-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  border-radius: 10px;
-}
+
 
 .achievements,
 .interests {
@@ -121,7 +149,7 @@ main {
   font-weight: bold;
 }
 .fa-submit{
-  background:#4CAF50
+  background:#040a04
 }
 #contact-form input,
 #contact-form button {
@@ -132,8 +160,8 @@ main {
 }
 
 #contact-form button {
-  background-color: #00c8ff;
-  color: #7b3a7d;
+  background-color: #070c0e;
+  color: #f8f5f8;
   border: #007BFF;
   cursor: pointer;
   width: 80px;
@@ -174,30 +202,44 @@ footer a {
   #about img {
     width: 100%;
   }
-  .social-icons{
- size: 10px;
- padding-left: 20px;
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
   }
-  .fa-google{
-    color: red;
+  
+  .social-icons a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: #fff;
+    transition: 0.3s;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.2);
+  }
+  
+  .fa-google {
     background-color: rgb(255, 182, 127);
-    size: 10px;
   }
-  .fa-google:hover{
-    color: rgb(255, 0, 0);
+  
+  .fa-github {
+    background-color: black;
   }
-.fa-github{
-  background-color: black ;
-}
-.fa-github:hover{
-  background-color: #007BFF;
-}
-.fa-twitter{
-  color: #007BFF;
-}
-.linkedin{
-  color: #007BFF;
-}
-.linkedin:hover{
-  background-color: aqua;
-}
+  
+  .fa-twitter {
+    background-color: #007BFF;
+  }
+  
+  .linkedin {
+    background-color: #007BFF;
+  }
+  
+  .linkedin:hover {
+    background-color: aqua;
+  }
