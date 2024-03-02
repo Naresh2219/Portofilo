@@ -8,124 +8,98 @@
   <!-- Make sure to replace 'your-fontawesome-kit.js' with your actual Font Awesome kit code -->
   <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 </head>
-<body>
-  <header>
-    <div class="profile-container">
-      <img src="Naresh.jpeg" alt="Naresh Challa's Profile Picture" class="profile-picture">
-      <div class="text-container">
-        <h1>Naresh Challa</h1>
-        <p>Software Engineer - Full Stack Enthusiast</p>
+<body class="dark-vertion black-bg">
+  <header class="black-bg mh-header mh-fixed-nav nav-scroll mh-xs-mobile-nav wow fadeInUp" id="mh-header">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg mh-nav nav-btn">
+          <a class="navbar-brand" href="#">
+            <h2>Naresh Challa</h2>
+          </a>
+          <button class="navbar-toggler " type="buttton" data-toggle="coallapse"
+            data-target="navabarSupportContent" aria-controls="navbarSupportedContent" arial-expanded="false" aria-label="Toggle navigation">
+          <span class="navabar-toggler-icon icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportContent">
+            <ul class="navbar-nav mr-0 ml-auto ">
+              <li class="nav-item active">
+                <a class="nav-link" href="#mh-home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#mh-about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#mh-skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#mh-experince">Experinces</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#mh-contact">Contact</a>
+              </li>          
+            </ul>
+          </div>
+        </nav>
       </div>
     </div>
   </header>
-  
-  
-  <nav>
-    <ul>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Driven by a passion for problem-solving and building innovative solutions, I'm an aspiring full-stack engineer with a strong foundation in Java, Spring Boot, and web development technologies.</p>
+<section class="mh-home" id="mh-home">
+  <div class="home-ovimg">
+    <div class="container">
+      <div class="row xs-column-reverse section-separator vertical-middle-content home-padding">
+        <div class="col-sm-6">
+          <div class="mh-header-info">
+            <div class="mh-promo wow fadeInup" data-wow-duration="0.8s" data-wow-delay="0.1s">
+              <span>Hello I'M</span>
+            </div>
+            <h2 class="wow fadeInup" data-wow-duration="0.8s" data-wow-delay="0.2s">Naresh Challa</h2>
+            <h4 class="wow fadeInup" data-wow-duration="0.8s" data-wow-delay="0.2s">Fulls Stack</h4>
+            <ul>
+              <li class="wow fadeInup" data-wow-duration="0.9s" data-wow-delay="0.4s">
+                <i class="fa fa-envelope"></i><a href="mailto:">cn818280@gmail.com</a>
+              </li>
+              <li class="wow fadeInup" data-wow-duration="0.10s" data-wow-delay="0.5s">
+                <i class="fa fa-phone"></i><a href="callto:">+91 7095432678</a>
+              </li>
+              <li class="wow fadeInup" data-wow-duration="0.12s" data-wow-delay="0.6s">
+                <i class="fa fa-map-marker"></i><address>Hyderabad, Telangana</address>
+              </li>
+            </ul>
 
-      <div class="achievements">
-        <h3>Achievements & Experiences</h3>
-        <ul>
-          <li>Participated in an inter-college dance competition, demonstrating teamwork and creativity.</li>
-          <li>Served as NSS head during Inter, contributing to community service and organizational leadership.</li>
-        </ul>
+            <ul class="social-icon wow fadeInup" data-wow-duration="0.8s" data-wow-delay="0.7s">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-github"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="naresh-img wow fadeInup" data-wow-duration="0.8s" data-wow-delay="0.8s">
+            <div class="img-border">
+              <img src="1656594866562.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div class="interests">
-        <h3>Personality & Interests</h3>
-        <ul>
-          <li>Enjoys exploring new technologies and staying up-to-date with trends.</li>
-          <li>Passionate about learn AI technologies</li>
-          <li>Always eager to learn and collaborate with others.</li>
-        </ul>
-      </div>
-      </section>
-
-    <section id="skills">
-      <h2>Skills & Expertise</h2>
-      <ul>
-        <li>Proficient in Java, Spring Framework, and Spring Boot (Core, MVC, ReST), HTML, CSS, JavaScript, SQL, MongoDB, and MySQL.</li>
-        <li>Experienced in building RESTful APIs and integrating with front-end frameworks like Angular.</li>
-        <li>Adept at implementing responsive and user-friendly web applications.</li>
-      </ul>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <p><strong>Customer Support Application:</strong></p>
-      <p>This is a customer support application that enables customers to create and manage their booking tickets. The application uses Angular for the frontend, Spring Boot for the backend and MongoDB as the database. It also utilizes RESTful APIs for communication between the frontend and backend.</p>
-      <p>Repository: <a href="https://github.com/Naresh2219/Angular-Customer.git">Customer Support Application Repository</a></p>
-    </section>
-
-    <section id="experience">
-      <h2>Experience</h2>
-      <h3>Angular, Java, and Spring Boot Developer</h3>
-      <p>As a student, I gained experience in Java, Spring Boot, Hibernate, and MySQL by completing coursework and building projects. I am confident in my ability to develop robust and efficient applications using these technologies.</p>
-
-      <h3>Angular and MongoDB Developer</h3>
-      <p>I have also worked with JavaScript, MongoDB, and other related technologies to build web applications. I am familiar with using modern front-end frameworks such as Angular to create interactive user interfaces.</p>
-
-      <h3>Relevant Coursework</h3> 
-      <ul>
-        <li>Java</li> 
-        <li>Angular</li> 
-        <li>Spring Boot</li> 
-        <li>Spring</li> 
-        <li>Hibernate</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>SQL</li>
-        <li>MySQL</li>
-        <li>MongoDB</li>
-      </ul> 
-    </section> 
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <form id="contact-form">
-        <div> 
-          <label for="name">Name:</label> 
-          <input type="text" id="name" name="name" required> 
-        </div> 
-        <div> 
-          <label for="phone">Phone:</label> 
-          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"> 
-        </div> 
-        <div> 
-          <label for="email">Email:</label> 
-          <input type="email" id="email" name="email" required> 
-        </div> 
-        <button type="submit">Submit</button> 
-      </form> 
-    </section> 
-  </main> 
-
-  <footer> 
-    <p>&copy; 2024 Naresh Challa</p> 
-    <p>If you'd like to get in touch, feel free to reach out to me</p>
-    <div class="social-icons">
-      <a href="mailto:cn818280@gmail.com" class="fa fa-google"></a>
-      <a href="https://github.com/Naresh2219" class="github"><i class="fa fa-github"></i></a>
-      <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-      <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-      <a href="https://www.linkedin.com/in/naresh-challa-012b62191" class="linkedin"><i class="fa fa-linkedin"></i></a>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <script src="index.js"></script> 
+<section class="mh-about" id="mh-about">
+  <div class="container">
+    <div class="row section-seperator">
+      <div class="col-som-12 col-md-6">
+        <div class="mh-about-img shadow-2 wow fadeInup" data-wow-duration="0.8s" data-wow-delay="0.4s">
+          <img src="Developer Naresh1.png" alt="img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
+
 </body> 
 </html>
